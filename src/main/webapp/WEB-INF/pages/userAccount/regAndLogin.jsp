@@ -119,8 +119,8 @@
 	</div>
 	<div class=""
 		style="width: 100%; padding-top: 20px; padding-bottom: 15px; vertical-align: middle; align: center; text-align: center">
-		<span style="color: gray">联系我们：xxxxxx@xxx.com</span> <br /> <span
-			style="color: gray">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;123456789</span>
+		<span style="color: gray">联系我们：942962957@qq.com</span> <br /> <span
+			style="color: gray">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梅海风</span>
 	</div>
 </body>
 

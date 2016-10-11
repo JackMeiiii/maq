@@ -29,7 +29,7 @@
 		<junit.version>4.11</junit.version>
 		<spring.version>4.0.8.RELEASE</spring.version>
 		<slf4j.version>1.7.2</slf4j.version>
-		<log4j.version>1.2.16</log4j.version>
+		<log4j.version>1.2.17</log4j.version>
 		<jetty.version>7.6.14.v20131031</jetty.version>
 		<jsonlib.version>2.4</jsonlib.version>
 		<shiro.version>1.2.2</shiro.version>
@@ -62,7 +62,11 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
@@ -101,17 +105,17 @@
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
-			<version>1.8.7</version>
+			<version>1.8.6</version>
 		</dependency>
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjtools</artifactId>
-			<version>1.8.7</version>
+			<version>1.8.6</version>
 		</dependency>
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjrt</artifactId>
-			<version>1.8.7</version>
+			<version>1.8.6</version>
 		</dependency>
 
 		<!-- spring webmvc begin -->
@@ -177,7 +181,7 @@
 		<dependency>
 			<groupId>commons-httpclient</groupId>
 			<artifactId>commons-httpclient</artifactId>
-			<version>3.0.1</version>
+			<version>3.1</version>
 		</dependency>
 
 		<dependency>
@@ -302,11 +306,26 @@
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.0-beta-1</version>
+				<version>2.2</version>
 				<configuration>
 					<uriEncoding>utf-8</uriEncoding>
 					<port>8080</port>
 					<path>/</path>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+					<encoding>UTF-8</encoding>
+					<compilerArguments>
+						<verbose />
+						<bootclasspath>${env.JAVA_HOME}/jre/lib/rt.jar</bootclasspath>
+						<extdirs>${project.basedir}/src/main/webapp/WEB-INF/lib</extdirs>
+					</compilerArguments>
 				</configuration>
 			</plugin>
 		</plugins>

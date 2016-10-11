@@ -84,8 +84,8 @@ public class AccountController {
 
 	/**
 	 * 
-	 * @param phoneNum
-	 * @param email
+//	 * @param phoneNum
+//	 * @param email
 	 * @param reason
 	 *            发送验证码的原因，可以是注册，也可以是改密
 	 * @param session

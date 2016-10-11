@@ -20,7 +20,7 @@ public class AliDayuSMSUtil {
 	 * 
 	 * @param targetPhoneNum
 	 *            接收短信的手机
-	 * @param signName汉字常量
+	 * @param //signName汉字常量
 	 *            如： 注册验证 登录验证 变更验证 参考：
 	 *            http://www.alidayu.com/admin/service/sign
 	 * @return
